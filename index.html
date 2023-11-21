@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css"> 
+    <style>
+      #hello {
+        display: flex;
+        justify-content: center;
+      }
+
+      #table-info {
+        width: 100%;
+      }
+
+      #user-entries {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="hello">
+      <fieldset style="width: 500px; height: 350px;">
+        <div class="container">
+          <div id="res">
+            <h1 align="center"><i>Registration Form</i></h1>
+            <form id="user-form">
+              <!-- Name -->
+              <div class="inputField">
+                <i class="fa-solid fa-user-tie"></i>
+                <label for="name">Name </label>
+                <input id="name" name="name" type="text" placeholder="Name" required>
+                <br>
+                <br>
+              </div>
+              <!-- Email -->
+              <div class="inputField">
+                <i class="fa-solid fa-envelope"></i>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Email" required>
+                <br>
+                <br>
+              </div>
+              <!-- Password -->
+              <div class="inputField">
+                <i class="fa-solid fa-lock"></i>
+                <label for="password">Password </label>
+                <input id="password" name="password" type="password" placeholder="Password" required>
+                <br>
+                <br>
+              </div>
+              <!-- Date of Birth -->
+              <div class="inputField">
+                <label for="dob">Date of Birth </label>
+                <input id="dob" name="dob" type="date" placeholder="Date of Birth" required>
+                <br>
+                <br>
+              </div>
+              <!-- Terms and conditions -->
+              <div>
+                <input id="tick_mark" name="tick_mark" type="checkbox">
+                <label for="tick_mark">Accept Terms and conditions</label>
+                <br>
+                <br>
+              </div>
+              <!-- Submit button -->
+              <div class="buttonField">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <div>
+      <!-- Table heading -->
+      <h2 align="center"><i>Entries Record</i></h2>
+    </div>
+    
+    <div id="user-entries">
+      <table id="table-info">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email Address</th>
+            <th>Password</th>
+            <th>Date of Birth</th>
+            <th>Status of Accepted terms</th>
+          </tr>
+        </thead>
+        <tbody id="show_the_date"></tbody>
+      </table>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
